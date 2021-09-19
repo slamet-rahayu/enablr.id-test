@@ -83,6 +83,9 @@ const useStyles = makeStyles((theme) => {
       [tablet]: {
         marginTop: '100px',
       },
+      [desktopMd]: {
+        marginTop: '50px',
+      },
     },
     navContainer: {
       position: 'fixed',

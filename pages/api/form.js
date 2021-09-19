@@ -6,12 +6,12 @@ import validate from 'backend-util/middleware/form';
 const handler = nextConnect();
 
 const currentDir = process.cwd();
-const dataPath = path.join(currentDir, '/backend-util/data/data.txt');
+const dataPath = path.join(currentDir, '/public/data/data.txt');
 
 handler.get(async (req, res) => {
   try {
     const data = fs.readFileSync(dataPath);
-    res.send(data);
+    res.send(data.toString());
   } catch (error) {
     res.status(500).send(error.message);
   }

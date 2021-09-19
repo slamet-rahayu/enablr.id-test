@@ -15,12 +15,26 @@ export default function VisionMission() {
         <Header />
         <Container>
           <Grid container className={classes.gridContent}>
-            <Grid item lg={3} md={3} sm={3} className={classes.cardGrid}>
+            <Grid
+              item
+              lg={4}
+              md={4}
+              sm={4}
+              xs={12}
+              className={classes.cardGrid}
+            >
               <Card>
                 <img alt="tenun" className={classes.image} src="/tenun.png" />
               </Card>
             </Grid>
-            <Grid item lg={5} md={5} sm={6} className={classes.textGrid}>
+            <Grid
+              item
+              lg={5}
+              md={5}
+              sm={6}
+              xs={12}
+              className={classes.textGrid}
+            >
               <div className={classes.textContainer}>
                 <h1 className={classes.heading}>Vision Mission</h1>
                 <h2 className={classes.sub}>Our Vision</h2>
@@ -51,7 +65,7 @@ export default function VisionMission() {
                 </div>
               </div>
             </Grid>
-            <Grid item lg={4} md={4} sm={3} className={classes.navGrid}>
+            <Grid lg={3} md={3} sm={2} xs={12} className={classes.navGrid}>
               <div className={classes.navContainer}>
                 <Navigation />
               </div>

@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <Container>
         <Grid container className={classes.gridContent}>
-          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.cardGrid}>
+          <Grid item lg={4} md={4} sm={4} xs={12} className={classes.cardGrid}>
             <Card>
               <img alt="rempah" className={classes.image} src="/rempah.png" />
             </Card>
@@ -45,7 +45,7 @@ export default function Home() {
               </p>
             </div>
           </Grid>
-          <Grid item lg={4} md={4} sm={3} xs={12} className={classes.navGrid}>
+          <Grid item lg={3} md={3} sm={2} xs={12} className={classes.navGrid}>
             <div className={classes.navContainer}>
               <Navigation />
             </div>

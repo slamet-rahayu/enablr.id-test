@@ -6,7 +6,7 @@ import validate from 'backend-util/middleware/form';
 const handler = nextConnect();
 
 const currentDir = process.cwd();
-const dataPath = path.join(currentDir, '/backend-util/data/data.txt');
+const dataPath = path.join(currentDir, '/data.txt');
 
 handler.get(async (req, res) => {
   try {

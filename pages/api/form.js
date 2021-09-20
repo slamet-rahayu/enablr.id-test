@@ -1,7 +1,7 @@
 import nextConnect from 'next-connect';
 import fs from 'fs';
 import path from 'path';
-import validate from 'backend-util/middleware/form';
+import validate from 'backend-util/validation/form';
 
 const handler = nextConnect();
 

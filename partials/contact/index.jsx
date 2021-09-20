@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Grid, CircularProgress } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
 import apiService from 'services/form';
@@ -13,7 +13,6 @@ import useStyles from './style.index';
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
   const [captcha, setCaptcha] = useState('');
 
   const { register, handleSubmit, errors } = useForm();
@@ -23,7 +22,7 @@ export default function Contact() {
     try {
       setIsLoading(true);
       await apiService.post(data);
-      setSuccess(true);
+      alert('success');
     } catch (error) {
       alert('Error');
     } finally {
@@ -35,12 +34,6 @@ export default function Contact() {
   const submit = handleSubmit(onSubmit);
 
   const handleCaptcha = (val) => setCaptcha(val);
-
-  useEffect(() => {
-    if (success) {
-      alert('success');
-    }
-  }, [success]);
 
   return (
     <>
